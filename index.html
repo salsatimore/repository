@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Meteorologi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Menambahkan JavaScript -->
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Selamat Datang di Dunia Meteorologi</h1>
+            <p>Pelajari tentang cuaca, iklim, dan fenomena alam yang memengaruhi kehidupan kita.</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Meteorologi</h2>
+            <p>Meteorologi adalah ilmu yang mempelajari tentang atmosfer, cuaca, dan fenomena yang terjadi di atmosfer, seperti hujan, angin, dan suhu. Meteorologi sangat penting dalam memprediksi cuaca untuk kehidupan sehari-hari dan juga dalam berbagai sektor, seperti pertanian, penerbangan, dan kesehatan.</p>
+        </div>
+    </section>
+
+    <section id="phenomena">
+        <div class="container">
+            <h2>Fenomena Alam dalam Meteorologi</h2>
+            <div class="card" onclick="showMoreInfo('Hujan')">
+                <img src="hujan.jpg" alt="Hujan">
+                <h3>Hujan</h3>
+                <p>Hujan adalah bentuk presipitasi di mana air jatuh dari awan dalam bentuk tetesan cairan. Hujan sangat penting untuk siklus air di Bumi.</p>
+            </div>
+            <div class="card" onclick="showMoreInfo('Angin')">
+                <img src="angin.jpg" alt="Angin">
+                <h3>Angin</h3>
+                <p>Angin adalah gerakan udara dari daerah bertekanan tinggi ke daerah bertekanan rendah. Angin berperan penting dalam mengatur suhu dan kelembapan atmosfer.</p>
+            </div>
+            <div class="card" onclick="showMoreInfo('Awan')">
+                <img src="awan.jpg" alt="Awan">
+                <h3>Awan</h3>
+                <p>Awan terbentuk dari uap air yang mengembun di udara. Mereka memengaruhi cuaca dan iklim di seluruh dunia.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="weather-tips">
+        <div class="container">
+            <h2>Tips Menghadapi Cuaca Ekstrem</h2>
+            <ul>
+                <li>Periksa ramalan cuaca secara rutin agar bisa merencanakan aktivitas di luar ruangan.</li>
+                <li>Selalu bawa perlengkapan yang sesuai, seperti payung, jas hujan, atau pelindung dari panas.</li>
+                <li>Jaga tubuh tetap terhidrasi, terutama saat cuaca panas.</li>
+                <li>Waspadai cuaca ekstrem seperti badai atau banjir dan selalu ikuti peringatan resmi dari pihak berwenang.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meteorologi Info | Semua Hak Dilindungi</p>
+        </div>
+    </footer>
+
+    <!-- Modal (Pop-up) -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Informasi Lebih Lanjut</h2>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+</body>
+</html>
